@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "7099be7e-cd62-4aed-8398-e1973e16ba43",
+		"name": "_02_Taller_Eventos_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34450290"
+	},
+	"item": [
+		{
+			"name": "get_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}events"
+			},
+			"response": []
+		},
+		{
+			"name": "get_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}events/97e22bf5-9f8a-4ab9-bd7e-dc526c064836"
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Concierto\",\r\n    \"date\": \"2024-04-29\",\r\n    \"location\": \"Medellin - Colombia\",\r\n    \"capacity\": 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}events"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Concierto\",\r\n    \"date\": \"2024-04-27\",\r\n    \"location\": \"Medellin - Colombia\",\r\n    \"capacity\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}events/2549fd63-8249-410c-a656-e0e5a27b70f4"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{URL}}events/2549fd63-8249-410c-a656-e0e5a27b70f4"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "localhost:8080/api/v1/",
+			"type": "string"
+		}
+	]
+}
