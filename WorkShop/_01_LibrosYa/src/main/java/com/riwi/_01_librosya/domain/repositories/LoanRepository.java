@@ -1,0 +1,7 @@
+package com.riwi._01_librosya.domain.repositories;
+
+import com.riwi._01_librosya.domain.entities.Loan;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LoanRepository extends JpaRepository<Loan, Long> {
+}
